@@ -3,6 +3,8 @@ jdk: oraclejdk7
 env:
   matrix:
     - ANDROID_SDKS=android-21,sysimg-23  ANDROID_TARGET=android-21  ANDROID_ABI=armeabi-v7a
+  global:
+    - ADB_INSTALL_TIMEOUT=8
 android:
   components:
     - tools
