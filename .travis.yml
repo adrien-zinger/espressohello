@@ -4,7 +4,7 @@ env:
   matrix:
     - ANDROID_SDKS=android-21,sysimg-23  ANDROID_TARGET=android-21  ANDROID_ABI=armeabi-v7a
   global:
-    - ADB_INSTALL_TIMEOUT=8
+    - ADB_INSTALL_TIMEOUT=20
 android:
   components:
     - tools
@@ -30,4 +30,4 @@ before_script:
   - adb shell input keyevent 82 &
 
 script:
-  - travis_wait ./gradlew connectedAndroidTest
+  - ./gradlew connectedAndroidTest --stacktrace
