@@ -40,6 +40,6 @@ public class TestMain {
     public void testMain() {
         onView(withId(R.id.edit1)).perform(typeText(mStringToBetyped), closeSoftKeyboard());
         onView(withId(R.id.button1)).perform(click());
-        onView(withId(R.id.result1)).check(matches(withText(mStringToBetyped)));
+        onView(withId(R.id.result2)).check(matches(withText(mStringToBetyped)));
     }
 }
