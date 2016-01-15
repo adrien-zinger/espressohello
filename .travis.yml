@@ -30,4 +30,4 @@ before_script:
 
 script:
   - ./wait_for_emulator
-  - ./gradlew connectedAndroidTest
+  - travis_wait ./gradlew connectedAndroidTest
