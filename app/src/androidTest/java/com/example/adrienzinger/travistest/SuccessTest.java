@@ -6,6 +6,6 @@ public class SuccessTest {
 
     @Test
     public void firstTest() {
-        assertEquals(true, true);
+        assertTrue(true);
     }
 }
