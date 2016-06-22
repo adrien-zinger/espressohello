@@ -2,10 +2,10 @@ package com.example.adrienzinger.travistest;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class SuccessTest {
+public class FailTest {
 
     @Test
     public void firstTest() {
-        assertEquals(true, true);
+        assertEquals(true, false);
     }
 }
